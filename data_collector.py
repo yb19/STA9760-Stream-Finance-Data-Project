@@ -21,7 +21,7 @@ import yfinance
 
 def lambda_handler(event, context):
 
-    data = yfinance .download("FB SHOP BYND NFLX PINS SQ TTD OKTA SNAP DDOG", start = "2020-05-14", end = "2020-05-15", interval = "1m")
+    data = yfinance.download("FB SHOP BYND NFLX PINS SQ TTD OKTA SNAP DDOG", start = "2020-05-14", end = "2020-05-15", interval = "1m")
     data = data[['High', 'Low']].stack().reset_index()
     data = data.rename(columns = {'Datetime': 'ts', 'level_1': 'name', 'High': 'high', 'Low': 'low'})
     data = data.sort_values(by = ['name', 'ts'])
