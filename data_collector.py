@@ -3,20 +3,8 @@ import boto3
 import subprocess
 import sys
 
-def install(package):
-    subprocess.check_call([
-        sys.executable, 
-        "-m", 
-        "pip", 
-        "install", 
-        "--target",
-        "/tmp",
-        package])
-        
-install('yfinance')
-
+subprocess.check_call([sys.executable, "-m", "pip", "install", "--target", "/tmp", 'yfinance'])
 sys.path.append('/tmp')
-
 import yfinance 
 
 def lambda_handler(event, context):
