@@ -21,7 +21,8 @@ Then, I configure AWS Glue, pointing it to the S3 Bucket that I created in my Da
 Finally, I leverage Jupyter Notebook that takes the results.csv file from DataAnalyzer and generates a few visualizations on the data that I accumulated. 
 
 ## DataCollector AWS Lambda configuration 
-![](https://github.com/yb19/STA9760-Stream-Finance-Data-Project/tree/master/assets/lambda.png)
+![lambda](https://github.com/yb19/STA9760-Stream-Finance-Data-Project/tree/master/assets/lambda.png?raw=true)
+![cluster](https://github.com/yb19/STA9760-Yelp-Reviews-Project/blob/master/assets/cluster.png?raw=true)
 
 ## Kinesis Firehose Delivery Stream Monitoring
-![](https://github.com/yb19/STA9760-Stream-Finance-Data-Project/tree/master/assets/kinesis.png)
+![kinesis](https://github.com/yb19/STA9760-Stream-Finance-Data-Project/tree/master/assets/kinesis.png?raw=true)
